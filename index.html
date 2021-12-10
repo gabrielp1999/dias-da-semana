@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main id="container">
+        <div id="campoIdiomas">            
+            <label id="idiomas" for="">Idioma</label>
+            <select onchange="idiomas(this.value)" name="select">
+                <option value="portugues">Portugues</option>
+                <option value="ingles">Ingles</option>
+            </select>
+        </div>
+
+        <div id="campoDiasSemana"> 
+            <label for="">Dias da semana</label>
+            <select onchange="diasSemana(this.value)" name="select">
+                <option value="domingo">Domingo</option>
+                <option value="segunda">Segunda</option>
+                <option value="terca">Terça</option>
+                <option value="quarta">Quarta</option>
+                <option value="quinta">Quinta</option>
+                <option value="sexta">Sexta</option>
+                <option value="sabado">Sabado</option>
+            </select>
+        </div>
+
+        <div id="campoDiasSemanaIng"> 
+            <label for="">Days of the week</label>
+            <select onchange="diasSemanaIngles(this.value)" name="select">
+                <option value="domingo">Sunday</option>
+                <option value="segunda">Monday</option>
+                <option value="terca">Tuesday</option>
+                <option value="quarta">Wednesday</option>
+                <option value="quinta">Thursday</option>
+                <option value="sexta">Friday</option>
+                <option value="sabado">Saturday</option>
+            </select>
+        </div>
+
+        <div id="descricao"></div>
+
+    </main>    
+
+    <script src="./main.js"></script>
+</body>
+</html>
